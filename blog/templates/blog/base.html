@@ -6,9 +6,7 @@
         <title>Oarts blog</title>
     </head>
     <body>
-    {% if user.is_authenticated %}
-        <a href="{% url 'blog.views.post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus">добавить запись</span></a>
-    {% endif %}
+
         <div>
             <h1><a href="{% url 'post_list' %}" class="top-menu">Блог</a></h1>
         </div>
